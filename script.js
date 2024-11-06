@@ -4,7 +4,10 @@ const newGridButton = document.querySelector("#newGridButton")
 newGridButton.addEventListener('click', newGrid)
 
 function createGrid(squaresPerSide) {
-    const squareSize = 500 / squaresPerSide;
+    const containerSize = 500;
+    container.style.width = `${containerSize}px`;
+    container.style.width = `${containerSize}px`;
+    const squareSize = Math.floor((containerSize - (squaresPerSide -1))/ squaresPerSide);
 
     container.textContent = '';
 
